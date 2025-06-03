@@ -52,6 +52,7 @@ html {
 
 .container {
   max-width: 1920px;
+  min-width: 400px;
   margin: 0px auto;
   /* min-height: 100vh; */
   /* border: 1px solid grey; */
