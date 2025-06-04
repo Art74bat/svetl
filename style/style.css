@@ -76,6 +76,23 @@ html {
   line-height: 19.5px;
 }
 
+.message,
+.info {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+}
+
+.info {
+  color: green;
+}
+
 /* header------------------------------------------------------------------ */
 
 /* .header{
@@ -428,7 +445,7 @@ html {
   text-indent: 30px;
 }
 
-.about_detail__text > span {
+.about_detail__text>span {
   font-size: 18px;
   color: rgb(11, 70, 126);
 }
@@ -511,6 +528,7 @@ html {
   line-height: 30px;
   border-bottom: 2px solid rgb(234, 182, 92);
 }
+
 .all_help_card {
   display: flex;
   justify-content: space-around;
@@ -677,9 +695,6 @@ html {
   background-image: url("/images/bg_form.png");
 }
 
-.message {
-  min-height: 80px;
-}
 
 .help__title {
   margin-bottom: 40px;
@@ -983,12 +998,10 @@ html {
   align-items: center;
   justify-content: flex-start;
   /* border: 1px solid green; */
-  background: linear-gradient(
-    270deg,
-    rgb(55, 63, 97),
-    rgb(68, 79, 124) 50.09%,
-    rgb(55, 63, 97) 99.586%
-  );
+  background: linear-gradient(270deg,
+      rgb(55, 63, 97),
+      rgb(68, 79, 124) 50.09%,
+      rgb(55, 63, 97) 99.586%);
 }
 
 .credo__pic {
