@@ -1,0 +1,58 @@
+
+// index(price)=================
+
+.price {
+    margin-bottom: 6.25rem;
+  }
+  
+  .price_wrapp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3.75rem;
+  }
+  
+  .price__title {
+    margin-bottom: 71px;
+    color: $black-color;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.87rem;
+  }
+  
+  /* grid & subgrid */
+  .price_card {
+    width: 350px;
+    height: 300px;
+    padding: 1.25rem 0rem;
+    padding-left: 1.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: $b-radius;
+    background-color: $lg-bg;
+  }
+  
+  .price_card__description {
+    margin-bottom: 1.25rem;
+    color: $black-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  
+  .price_card__ammount {
+    margin-bottom: 1.25rem;
+    color: $black-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  
+  .price__card_btn {
+    width: 10.625rem;
+  }

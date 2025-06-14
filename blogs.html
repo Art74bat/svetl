@@ -4,124 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/dist/css/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header_top">
-            <div class="social_wrapp">
-                <a class="header_top__social_link" href="https://vk.com/svetemuzic"><img class="header_top__social_icons" src="./images/icons/vk.png" alt="vk_icon"></a>
-                <a class="header_top__social_link" href="#"><img class="header_top__social_icons" src="./images/icons/telegramm.png" alt="telegram_icon"></a>
-                <a class="header_top__social_link" href="#"><img class="header_top__social_icons" src="./images/icons/whatsapp.png" alt="whatsapp_icon"></a>
-                <a href="mailto:help@example.com?subject=Вопрос&body=Здравствуйте," class="header_top__link" >help@example.com</a>
-            </div>
-            <div class="header_phone">
-                <img src="./images/icons/phone.png" alt="phone_icon">
-                <a class="phone_link" href="tel:89104570560"><span class="phone_text">Обратный звонок</span></a>
-                <span class="phone_number">8(910)457-05-60</span>
-            </div>
-        </div>
-        <div class="header_bottom">
-            <div class="logo">
-                <a href="index.html"><img src="./images/top_logo.png" alt="logo"></a>
-            </div>
-            <nav class="header_navigate">
-                <ul class="header_navigate__list">
-                    <li class="header_navigate__item"><a class="header_navigate__link" href="about.html">Обо мне</a></li>
-                    <li class="header_navigate__item"><a class="header_navigate__link" href="help.html">Моя помощь</a></li>
-                    <li class="header_navigate__item"><a class="header_navigate__link" href="online.html">Онлайн запись</a></li>
-                    <li class="header_navigate__item"><a class="header_navigate__link" href="reviews.html">Отзывы</a></li>
-                    <li class="header_navigate__item"><a class="header_navigate__link" href="blogs.html">Статьи</a></li>
-                    <li class="header_navigate__item"><a class="header_navigate__link" href="#">Администратор</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <div class="wrapp">
-            <section class="my_blog">
-                <h2 class="my_blog__title">Все статьи</h2>
-                <div class="article_card">
-                    <picture class="article_card__pic">
-                        <!-- <source type='image/avif' srcset='./image/.avif'>
-                        <source type='image/webp' srcset='./image/.webp' > -->
-                        <img class="article_card__img" src='./images/article_3.png' alt='card_picture'>
-                    </picture>	
-                   <div class="article_card__wrapp">
-                    <span class="article_card__date">25.05.25</span>
-                    <h2 class="article_card__title">Как справиться с социофобией</h2>
-                    <p class="article_card__descript">Можно ли самостоятельно побороть социофобию или нужно обращаться к специалисту? Когда человек становиться социофобом?</p>
-                    <a class="article__link" href="articles.html">Подробнее</a>
-                   </div>
+    <div class="container">
+        <header class="header">
+            <div class="header_top">
+                <div class="social_wrapp">
+                    <a class="header_top__social_link" href="https://vk.com/svetemuzic"><img class="header_top__social_icons" src="/dist/images/icons/vk.png" alt="vk_icon"></a>
+                    <a class="header_top__social_link" href="#"><img class="header_top__social_icons" src="/dist/images/icons/telegramm.png" alt="telegram_icon"></a>
+                    <a class="header_top__social_link" href="#"><img class="header_top__social_icons" src="/dist/images/icons/whatsapp.png" alt="whatsapp_icon"></a>
+                    <a href="mailto:help@example.com?subject=Вопрос&body=Здравствуйте," class="header_top__link" >help@example.com</a>
                 </div>
-                <div class="article_card">
-                    <picture class="article_card__pic">
-                        <!-- <source type='image/avif' srcset='./image/.avif'>
-                        <source type='image/webp' srcset='./image/.webp' > -->
-                        <img class="article_card__img" src='./images/virt.webp' alt='card_picture'>
-                    </picture>	
-                   <div class="article_card__wrapp">
-                    <span class="article_card__date">25.05.25</span>
-                    <h2 class="article_card__title">Витуальный секс - это измена?</h2>
-                    <p class="article_card__descript">Что делать если вы узнали что ваш партнер занимается виртуальным сексом.</p>
-                    <a class="article__link" href="articles.html">Подробнее</a>
-                   </div>
+                <div class="header_phone">
+                    <img src="/dist/images/icons/phone.png" alt="phone_icon">
+                    <a class="phone_link" href="tel:89104570560"><span class="phone_text">Обратный звонок</span></a>
+                    <span class="phone_number">8(910)457-05-60</span>
                 </div>
-                <div class="article_card">
-                    <picture class="article_card__pic">
-                        <!-- <source type='image/avif' srcset='./image/.avif'>
-                        <source type='image/webp' srcset='./image/.webp' > -->
-                        <img class="article_card__img" src='./images/article_2.png' alt='card_picture'>
-                    </picture>	
-                   <div class="article_card__wrapp">
-                    <span class="article_card__date">25.05.25</span>
-                    <h2 class="article_card__title">Ревную своего мужчину ко всем, что делать в такой ситуации?</h2>
-                    <p class="article_card__descript">Узнайте как ревность и плохая самооценка могу разрушить отношения.</p>
-                    <a class="article__link" href="articles.html">Подробнее</a>
-                   </div>
-                </div>
-                <a class="index_link" href="index.html">На главную</a>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="footer_wrapp">
+            </div>
+            <div class="header_bottom">
                 <div class="logo">
-                    <a href="index.html"><img class="footer_logo" src="./images/footer_logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="/dist/images/top_logo.png" alt="logo"></a>
                 </div>
-                <div class="social_wrapp footer_social">
-                    <a class="footer_top__social_link" href="https://vk.com/svetemuzic"><img class="footer_top__social_icons" src="./images/icons/vk.png" alt="vk_icon"></a>
-                    <a class="footer_top__social_link" href="#"><img class="footer_top__social_icons" src="./images/icons/telegramm.png" alt="telegram_icon"></a>
-                    <a class="footer_top__social_link" href="#"><img class="footer_top__social_icons" src="./images/icons/whatsapp.png" alt="whatsapp_icon"></a>                     
+                <nav class="header_navigate">
+                    <ul class="header_navigate__list">
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="about.html">Обо мне</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="help.html">Моя помощь</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="online.html">Онлайн запись</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="reviews.html">Отзывы</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="blogs.html">Статьи</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="#">Администратор</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="message"></div>
+            <div class="wrapp">
+                <section class="my_blog">
+                    <h2 class="my_blog__title">Все статьи</h2>
+                    <div class="article_card">
+                        <picture class="article_card__pic">
+                            <!-- <source type='image/avif' srcset='./image/.avif'>
+                            <source type='image/webp' srcset='./image/.webp' > -->
+                            <img class="article_card__img" src='/dist/images/article_3.png' alt='card_picture'>
+                        </picture>	
+                       <div class="article_card__wrapp">
+                        <span class="article_card__date">25.05.25</span>
+                        <h2 class="article_card__title">Как справиться с социофобией</h2>
+                        <p class="article_card__descript">Можно ли самостоятельно побороть социофобию или нужно обращаться к специалисту? Когда человек становиться социофобом?</p>
+                        <a class="article__link" href="articles.html">Подробнее</a>
+                       </div>
+                    </div>
+                    <div class="article_card">
+                        <picture class="article_card__pic">
+                            <!-- <source type='image/avif' srcset='./image/.avif'>
+                            <source type='image/webp' srcset='./image/.webp' > -->
+                            <img class="article_card__img" src='/dist/images/virt.webp' alt='card_picture'>
+                        </picture>	
+                       <div class="article_card__wrapp">
+                        <span class="article_card__date">25.05.25</span>
+                        <h2 class="article_card__title">Витуальный секс - это измена?</h2>
+                        <p class="article_card__descript">Что делать если вы узнали что ваш партнер занимается виртуальным сексом.</p>
+                        <a class="article__link" href="articles.html">Подробнее</a>
+                       </div>
+                    </div>
+                    <div class="article_card">
+                        <picture class="article_card__pic">
+                            <!-- <source type='image/avif' srcset='./image/.avif'>
+                            <source type='image/webp' srcset='./image/.webp' > -->
+                            <img class="article_card__img" src='/dist/images/article_2.png' alt='card_picture'>
+                        </picture>	
+                       <div class="article_card__wrapp">
+                        <span class="article_card__date">25.05.25</span>
+                        <h2 class="article_card__title">Ревную своего мужчину ко всем, что делать в такой ситуации?</h2>
+                        <p class="article_card__descript">Узнайте как ревность и плохая самооценка могу разрушить отношения.</p>
+                        <a class="article__link" href="articles.html">Подробнее</a>
+                       </div>
+                    </div>
+                    <a class="index_link" href="index.html">На главную</a>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="footer_wrapp">
+                    <div class="logo">
+                        <a href="index.html"><img class="footer_logo" src="/dist/images/footer_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="social_wrapp footer_social">
+                        <a class="footer_top__social_link" href="https://vk.com/svetemuzic"><img class="footer_top__social_icons" src="/dist/images/icons/vk.png" alt="vk_icon"></a>
+                        <a class="footer_top__social_link" href="#"><img class="footer_top__social_icons" src="/dist/images/icons/telegramm.png" alt="telegram_icon"></a>
+                        <a class="footer_top__social_link" href="#"><img class="footer_top__social_icons" src="/dist/images/icons//whatsapp.png" alt="whatsapp_icon"></a>                     
+                    </div>
+                </div>
+                <nav class="footer_navigate">
+                    <ul class="footer_navigate__list">
+                        <li class="footer_navigate__item"><a class="footer_navigate__link" href="about.html">Обо мне</a></li>
+                        <li class="footer_navigate__item"><a class="footer_navigate__link" href="help.html">Моя помощь</a></li>
+                        <li class="footer_navigate__item"><a class="footer_navigate__link" href="online.html">Онлайн запись</a></li>
+                        <li class="footer_navigate__item"><a class="footer_navigate__link" href="reviews.html">Отзывы</a></li>
+                        <li class="footer_navigate__item"><a class="footer_navigate__link" href="blogs.html">Статьи</a></li>
+                        <li class="footer_navigate__item"><a class="footer_navigate__link" href="#">Администратор</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_contacts">
+                    <div class="footer_phone">
+                        <img src="/dist/images/icons/phone.png" alt="phone_icon">
+                        <a href="tel:89104570560" class="phone_number">8(910)457-05-60</a>
+                    </div>
+                    <div class="email">
+                        <img src="/dist/images/icons/mail.png" alt="email_icon">
+                        <a href="mailto:help@example.com?subject=Вопрос&body=Здравствуйте," class="header_top__link">help@example.com</a>
+                    </div>
                 </div>
             </div>
-            <nav class="footer_navigate">
-                <ul class="footer_navigate__list">
-                    <li class="footer_navigate__item"><a class="footer_navigate__link" href="about.html">Обо мне</a></li>
-                    <li class="footer_navigate__item"><a class="footer_navigate__link" href="help.html">Моя помощь</a></li>
-                    <li class="footer_navigate__item"><a class="footer_navigate__link" href="online.html">Онлайн запись</a></li>
-                    <li class="footer_navigate__item"><a class="footer_navigate__link" href="reviews.html">Отзывы</a></li>
-                    <li class="footer_navigate__item"><a class="footer_navigate__link" href="blogs.html">Статьи</a></li>
-                    <li class="footer_navigate__item"><a class="footer_navigate__link" href="#">Администратор</a></li>
-                </ul>
-            </nav>
-            <div class="footer_contacts">
-                <div class="footer_phone">
-                    <img src="./images/icons/phone.png" alt="phone_icon">
-                    <a href="tel:89104570560" class="phone_number">8(910)457-05-60</a>
-                </div>
-                <div class="email">
-                    <img src="./images/icons/mail.png" alt="email_icon">
-                    <a href="mailto:help@example.com?subject=Вопрос&body=Здравствуйте," class="header_top__link">help@example.com</a>
-                </div>
+            <div class="footer_bottom">
+                <span class="footer_bottom__text">Семейный эксперт Елена Светличная ©, 2025</span>
+                <a class="footer_bottom__link" href="oferta.html">Договор оферты</a>
+                <a class="footer_bottom__link" href="#">Пользовательское соглашение</a>
             </div>
-        </div>
-        <div class="footer_bottom">
-            <span class="footer_bottom__text">Семейный эксперт Елена Светличная ©, 2025</span>
-            <a class="footer_bottom__link" href="#">Договор оферты</a>
-            <a class="footer_bottom__link" href="#">Пользовательское соглашение</a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,152 @@
+
+//страница все отзывы
+
+.all_reviews__title {
+    // margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
+    color: $orange-color;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.87rem;
+    border-bottom: 2px solid $orange-color;
+  }
+  
+  .all_reviews {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: flex-start;
+    margin-bottom: 1.87rem;
+  }
+  
+  .review_form {
+    max-width: 37.5rem;
+    min-width: 18.75rem;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .review_form__label {
+    display: block;
+    color: $black-color;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .review_form__input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.81rem;
+    padding: 0.1875rem 0rem 0.25rem 0.625rem;
+    border: 1px solid #cecece;
+    background: $lg-bg;
+    border-radius: 8px;
+  }
+  
+  .review_form__textarea {
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+    min-height: 150px;
+    color: $black-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    background: #f6f6f6;
+    border: 1px solid #cecece;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem 0.625rem;
+  }
+  
+  .review_form__input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+  
+  .review_form__input::placeholder {
+    color: $black-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    opacity: 0.4;
+  }
+  
+  .review_form__btn {
+    cursor: pointer;
+    border: 1px solid #cecece;
+    background: $orange-color;
+    box-shadow: inset 0px 20px 20px #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.87rem;
+    width: 7.5rem;
+  }
+  
+  .review_form__btn:hover {
+    box-shadow: inset 0px -20px 20px #ffffff;
+  }
+  
+  .review_form__btn:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+    zoom: 1;
+  }
+  
+  .review_form__btn:focus {
+    outline: none;
+  }
+  
+  .all_reviews_cards_wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.87rem;
+  }
+  
+  .all_reviews_card {
+    max-width: 1000px;
+    padding: 1.87rem 2.5rem;
+    background-color: rgb(241, 234, 214);
+    border-radius: $b-radius;
+  }
+  
+  .all_reviews_card__date {
+    color: $orange-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  
+  .all_reviews_card__title {
+    display: flex;
+    gap: 0.625rem;
+    color: $black-color;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.87rem;
+  }
+  
+  .all_reviews_card__descript {
+    color: $black-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  

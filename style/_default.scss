@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1920px;
+    min-width: 400px;
+    margin: 0px auto;
+    /* min-height: 100vh; */
+    /* border: 1px solid grey; */
+    box-shadow: 0px 0px 4px gray;
+}
+.wrapp {
+    max-width: 1738px;
+    margin: 0 auto;
+}
+.index_link {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    color: rgb(234, 182, 92);
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+}
+.message,
+.info {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+}
+
+.info {
+  color: green;
+}

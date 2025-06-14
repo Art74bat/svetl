@@ -1,0 +1,75 @@
+
+// index(section help with form)
+// для страницы онлайн-записи стили отсюда-же
+
+.help {
+    margin-bottom: 6.25rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 3.18rem;
+    background-image: url("/dist/images/bg_form.png");
+  }
+  
+  .help__title {
+    margin-bottom: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat-Semibold", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.87rem;
+  }
+  
+  .help__description {
+    margin-bottom: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  
+  .form {
+    max-width: 37.5rem;
+  }
+  
+  .form__input_text,
+  .form__input_tel {
+    margin-bottom: 1.25rem;
+    padding: 0.625rem 1.87rem;
+    color: rgb(65, 98, 136);
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+    border-radius: $b-radius;
+  }
+  
+  .form__input_tel {
+    margin-left: 0.625rem;
+  }
+  
+  .form_wrapp {
+    display: flex;
+    gap: 1.87rem;
+  }
+  
+  .form__btn {
+    cursor: pointer;
+  }
+  
+  .form__descript {
+    max-width: 18.125rem;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+  }
+  
+  .form__link {
+    color: rgb(255, 255, 255);
+  }
+  
+  .online_help {
+    margin-bottom: 2.5rem;
+  }

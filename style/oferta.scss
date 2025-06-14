@@ -1,0 +1,27 @@
+
+// страница оферты
+.oferta{
+    margin: 3rem 0rem;
+}
+.oferta__title{
+    font-family: "Montserrat-SemiBold", sans-serif;
+}
+.oferta__date{
+    margin: 0.5rem 0rem;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+.outer_list{
+    list-style: none;
+    li{
+        margin: 0.5rem 0rem;
+        font-family: "Montserrat-Regular", sans-serif;
+        span{
+            font-family: "Montserrat-Medium", sans-serif;
+        }
+    }
+    .inner_list{
+        .inner_list_item{
+            margin-left: 2rem;
+        }
+    }
+}

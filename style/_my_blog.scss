@@ -1,0 +1,81 @@
+
+
+// страница все статьи
+
+.my_blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .my_blog__title {
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
+    color: $orange-color;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.87rem;
+    border-bottom: 2px solid $orange-color;
+  }
+  
+  .article_card {
+    max-width: 75rem;
+    min-height: 13.75rem;
+    display: flex;
+    gap: 3.125rem;
+    margin-bottom: 30px;
+    background-color: $lg-bg;
+    border-radius: $b-radius;
+  }
+  
+  .article_card__pic {
+    max-width: 23.125em;
+    display: block;
+  }
+  
+  .article_card__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: $b-radius;
+  }
+  
+  .article_card__wrapp {
+    max-width: 375rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  
+  .article_card__date {
+    color: $orange-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  
+  .article_card__title {
+    color: $black-color;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.87rem;
+  }
+  
+  .article_card__descript {
+    margin-bottom: 0.625rem;
+    color: $black-color;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.87rem;
+  }
+  
+  .article_card__descript_item {
+    text-indent: 1.76rem;
+  }
