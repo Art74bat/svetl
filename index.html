@@ -25,16 +25,24 @@
                 </div>
                 <div class="header_phone">
                     <img src="/dist/images/icons/phone.png" alt="phone_icon">
-                    <a class="phone_link" href="tel:89104570560"><span class="phone_text">Обратный звонок</span></a>
-                    <span class="phone_number">8(910)457-05-60</span>
+                    <a class="header_phone_link" href="tel:89104570560"><span class="header_phone_text">Обратный звонок</span></a>
+                    <span class="header_phone_number">8(910)457-05-60</span>
                 </div>
             </div>
             <div class="header_bottom">
                 <div class="logo">
-                    <a href="index.html"><img src="/dist/images/top_logo.png" alt="logo"></a>
+                    <a href="index.html"><img class="logo__img" src="/dist/images/top_logo.png" alt="logo"></a>
                 </div>
                 <nav class="header_navigate">
-                    <ul class="header_navigate__list">
+                    <!-- кнопка гамб -->
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span> 
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <ul class="header_navigate__list" id="menu">
                         <li class="header_navigate__item"><a class="header_navigate__link" href="about.html">Обо мне</a></li>
                         <li class="header_navigate__item"><a class="header_navigate__link" href="help.html">Моя помощь</a></li>
                         <li class="header_navigate__item"><a class="header_navigate__link" href="online.html">Онлайн запись</a></li>
@@ -43,6 +51,16 @@
                         <li class="header_navigate__item"><a class="header_navigate__link" href="#">Администратор</a></li>
                     </ul>
                 </nav>
+                <div class="popup" id="popup">
+                    <ul class="header_navigate__list" id="menu">
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="about.html">Обо мне</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="help.html">Моя помощь</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="online.html">Онлайн запись</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="reviews.html">Отзывы</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="blogs.html">Статьи</a></li>
+                        <li class="header_navigate__item"><a class="header_navigate__link" href="#">Администратор</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main class="main">
@@ -222,7 +240,7 @@
                         <input class="form__input_text" type="text" placeholder="Имя" required>
                         <input class="form__input_tel" type="tel" placeholder="Телефон" required>
                         <div class="form_wrapp">
-                            <button class="form__btn btn">Оставить заявку</button>
+                            <button type="button" class="form__btn btn">Оставить заявку</button>
                             <p class="form__descript">нажимая на кнопку "оставить заявку", вы подтверждаете свое согласие на обработку <a class="form__link" href="#">пользовательских данных</a></p>
                         </div>
                     </form>

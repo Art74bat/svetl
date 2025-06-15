@@ -8,6 +8,26 @@
     padding-bottom: 3rem;
     background-color: $lg-bg;
   }
+  
+    .footer_navigate__item {
+      list-style: none;
+    }
+    .footer_navigate__link {
+      position: relative;
+      text-decoration: none;
+      color: $black-color;
+      font-family: "Montserrat-Regular", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+    }
+  .footer_phone {
+    margin-right: 8.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
 
 .footer_social {
     margin-left: 0rem;
