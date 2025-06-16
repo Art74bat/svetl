@@ -263,7 +263,7 @@ html {
   .header .popup {
     position: absolute;
     top: 95px;
-    left: -100%;
+    left: -110%;
     width: 100%;
     padding-top: 20px;
     background-color: #ffffff;
@@ -480,8 +480,40 @@ html {
   background-color: rgb(253, 245, 223);
   border-radius: 0.5rem;
 }
+.about_detail__pic {
+  display: block;
+  max-width: 37.5rem;
+  margin-bottom: 2.5rem;
+}
+.about_detail__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.about_detail__descript {
+  padding: 20px;
+  color: rgb(52, 52, 52);
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.87rem;
+}
+.about_detail__text {
+  margin-bottom: 1.25rem;
+  text-indent: 1.87rem;
+}
+.about_detail__text span {
+  font-size: 1.125rem;
+  color: rgb(11, 70, 126);
+}
+.about_detail__text:first-of-type {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 1.56rem;
+  font-weight: 500;
+}
 
-.about__title {
+.about_title {
   margin-bottom: 2.31rem;
   padding-bottom: 1.25rem;
   color: rgb(234, 182, 92);
@@ -503,44 +535,11 @@ html {
   /* border: 1px solid red; */
 }
 
-.abaut_detail__pic {
-  display: block;
-  max-width: 37.5rem;
-  margin-bottom: 2.5rem;
+@media (max-width: 620px) {
+  .about_detail {
+    flex-direction: column;
+  }
 }
-
-.about_detail__image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-.about_detail__descript {
-  padding: 20px;
-  color: rgb(52, 52, 52);
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.87rem;
-}
-
-.first {
-  font-family: "Montserrat-Medium", sans-serif;
-  font-size: 1.56rem;
-  font-weight: 500;
-}
-
-.about_detail__text {
-  margin-bottom: 1.25rem;
-  text-indent: 1.87rem;
-}
-
-.about_detail__text > span {
-  font-size: 1.125rem;
-  color: rgb(11, 70, 126);
-}
-
 .my_help {
   margin-bottom: 6rem;
 }
