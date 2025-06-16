@@ -17,6 +17,9 @@ html {
     /* min-height: 100vh; */
     /* border: 1px solid grey; */
     box-shadow: 0px 0px 4px gray;
+    @media (max-width: 1720px) {
+      padding: 20px;
+    }
 }
 .wrapp {
     max-width: 1738px;
@@ -48,4 +51,29 @@ html {
 
 .info {
   color: green;
+}
+
+.title {
+  margin-bottom: 4rem;
+  color: $black-color;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.125rem;
+}
+
+.btn {
+  width: 20rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  background-color: $orange-color;
+  border-radius: 1.56rem;
 }

@@ -5,71 +5,83 @@
     display: flex;
     padding-top: 5.43rem;
     justify-content: space-between;
-    margin-bottom: 5.81rem;
+    margin-bottom: 6rem;
+
+    &__wrapp {
+      max-width: 48rem;
+      padding-top: 3.31rem;
+    }
+    &__description {
+      margin-bottom: 36px;
+      color: $black-color;
+      font-family: Montserrat;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.87rem;
+    }
+    
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    &__link {
+      position: relative;
+      text-decoration: none;
+      color: $orange-color;
+      font-family: "Montserrat-SemiBold", sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+    }
+    
+    &__link::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      display: block;
+      left: 0px;
+      bottom: 0px;
+      background-color: $orange-color;
+    }
+
+    &__pic {
+      display: block;
+      margin-bottom: 1.625rem;
+    }
+    
+    &__image {
+      width: 100%;
+      object-fit: fill;
+    }
+
+    @media (max-width: 1300px) {
+      &{
+        &__nav{
+          justify-content: space-around;
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      &{
+        flex-direction: column;
+
+        &__pic{
+          order: -1;
+        }
+        &__nav{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+    @media (max-width:620px) {
+      &{
+        margin-bottom: 3rem;
+      }
+    }
   }
-  
-  .top__wrapp {
-    max-width: 48rem;
-    padding-top: 3.31rem;
-  }
-  
-  .top__description {
-    margin-bottom: 36px;
-    color: $black-color;
-    font-family: Montserrat;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.87rem;
-  }
-  
-  .top__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .top__link {
-    position: relative;
-    text-decoration: none;
-    color: $orange-color;
-    font-family: "Montserrat-SemiBold", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.25rem;
-  }
-  
-  .top__link::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    display: block;
-    left: 0px;
-    bottom: 0px;
-    background-color: $orange-color;
-  }
-  
-  .title {
-    margin-bottom: 1.375rem;
-    color: $black-color;
-    font-family: Montserrat;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 3.125rem;
-  }
-  
-  .btn {
-    width: 20rem;
-    height: 3.125rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-family: "Montserrat-Medium", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.25rem;
-    background-color: $orange-color;
-    border-radius: 1.56rem;
-  }
+

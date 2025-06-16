@@ -2,11 +2,9 @@
 // index(section my_help)
 
 .my_help {
-    margin-bottom: 6rem;
-    padding-top: 5.37rem;
-  }
-  
-  .my_help__title {
+  margin-bottom: 6rem;
+      
+  &__title {
     margin-bottom: 4.43rem;
     color: $black-color;
     font-family: "Montserrat-Medium", sans-serif;
@@ -14,13 +12,7 @@
     font-weight: 500;
     line-height: 1.87rem;
   }
-  
-  .card {
-    min-width: 25.625rem;
-    position: relative;
-    list-style: none;
-  }
-  
+
   .card_wrapp {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25.625rem, 1fr));
@@ -29,31 +21,63 @@
     justify-content: center;
     margin-bottom: 4.43rem;
   }
-  
-  .card__descrit {
-    min-width: 25.625em;
-    height: 4.18rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0px;
-    bottom: 0.28rem;
-    border-bottom-left-radius: $b-radius;
-    border-bottom-right-radius: $b-radius;
-    background: rgb(82, 94, 132);
-    opacity: 0.78;
+
+  .card {
+    // min-width: 25.625rem;
+    position: relative;
+    list-style: none;
+
+    &__descrit {
+      min-width: 25.625em;
+      height: 4.18rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0px;
+      bottom: 0.28rem;
+      border-bottom-left-radius: $b-radius;
+      border-bottom-right-radius: $b-radius;
+      background: rgb(82, 94, 132);
+      opacity: 0.78;
+    }
+    
+    &__text {
+      max-width: 21.4375rem;
+      color: $lg-bg;
+      font-family: "Montserrat-SemiBold", sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+    }
   }
   
-  .card__text {
-    max-width: 21.4375rem;
-    color: $lg-bg;
-    font-family: "Montserrat-SemiBold", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.25rem;
-  }
-  
-  .my_help__btn {
+  &__btn {
     margin: 0px auto;
   }
+
+  @media (max-width:1000px) {
+    .card_wrapp{
+      justify-items: center;
+    }
+    .card{
+      &_image{
+        width: 350px;
+      }
+      &__descrit{
+        min-width: 350px;
+      }
+      &__text{
+        text-align: center;
+      }
+    }
+
+  }
+  
+  @media (max-width:620px) {
+    &{
+      margin-bottom: 3rem;
+    }
+
+  }
+}

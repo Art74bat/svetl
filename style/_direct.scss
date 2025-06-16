@@ -2,59 +2,90 @@
 // index(direct)
 
 .direct {
-    padding-top: 5.18rem;
-    margin-bottom: 5.62rem;
+    margin-bottom: 6rem;
+
+    &__title {
+      margin-bottom: 4.43rem;
+      color: $black-color;
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 2.25rem;
+      font-weight: 500;
+      line-height: 1.87rem;
+    }
+
+    &_card {
+      margin-bottom: 4.06rem;
+      padding: 0rem 3.125rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap:10px;
+      /* border:1px solid brown; */
+  
+      &__wrapp {
+        max-width: 39.3rem;
+        list-style: none;
+      }
+  
+      &__number {
+        margin-bottom: 1.25rem;
+      }
+  
+      &__title {
+        margin-bottom: 1.87rem;
+        color: $black-color;
+        font-family: "Montserrat-Medium", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.87rem;
+      }
+  
+      &__description {
+        color: $black-color;
+        font-family: "Montserrat-Regular", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.87rem;
+      }
+  
+      &__picture {
+        display: block;
+      }
+      
+      &__image {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    
+    @media(max-width:1000px) {
+      &{
+        margin-bottom: 3rem;
+      }
+      &_card{
+        flex-direction: column;
+        &__picture{
+          order: -1;
+        }
+      }
+    }
+
+    @media(max-width:620px) {
+      &_card{
+        padding: 0rem;
+      }
+    }
   }
   
-  .direct__title {
-    margin-bottom: 4.43rem;
-    color: $black-color;
-    font-family: "Montserrat-Medium", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: 1.87rem;
-  }
+
   
-  .direct_card {
-    margin-bottom: 4.06rem;
-    padding: 0rem 3.125rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border:1px solid brown; */
-  }
+
   
-  .direct_card__wrapp {
-    max-width: 39.3rem;
-    list-style: none;
-  }
+
   
-  .direct_card__number {
-    margin-bottom: 1.25rem;
-  }
+
   
-  .direct_card__title {
-    margin-bottom: 1.87rem;
-    color: $black-color;
-    font-family: "Montserrat-Medium", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.87rem;
-  }
+
   
-  .direct_card__description {
-    color: $black-color;
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.87rem;
-  }
+
   
-  .direct_card__picture {
-    display: block;
-  }
-  
-  .direct_card__image {
-    width: 100%;
-    object-fit: contain;
-  }
