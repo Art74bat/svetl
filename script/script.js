@@ -1,7 +1,18 @@
 $(document).ready(function(){
     const slider = $("#slider").owlCarousel({
         items: 1,
-        // margin:6,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+      },
+        margin:6,
         // loop: true,
         // nav: true,
         // navText: [

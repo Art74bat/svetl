@@ -867,7 +867,7 @@ html {
 }
 
 .reviews_wrapp {
-  width: 65.625rem;
+  max-width: 65.625rem;
   margin: 0rem auto;
   margin-bottom: 3.125rem;
 }
@@ -882,6 +882,7 @@ html {
 .review_card {
   max-width: 21.875rem;
   min-height: 18.75rem;
+  margin-left: 2px;
   padding: 1.25rem;
   list-style: none;
   border-radius: 1.5625rem;
@@ -1410,11 +1411,13 @@ html {
   padding-bottom: 3rem;
   background-color: rgb(253, 245, 223);
 }
-
+.footer_navigate__list {
+  display: flex;
+  gap: 5.3rem;
+}
 .footer_navigate__item {
   list-style: none;
 }
-
 .footer_navigate__link {
   position: relative;
   text-decoration: none;
@@ -1424,28 +1427,6 @@ html {
   font-weight: 400;
   line-height: 1.25rem;
 }
-
-.footer_phone {
-  margin-right: 8.125rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.footer_social {
-  margin-left: 0rem;
-}
-
-.footer_navigate__list {
-  display: flex;
-  gap: 5.3rem;
-}
-
-.footer_phone {
-  margin-bottom: 2.75rem;
-}
-
 .footer_bottom {
   display: flex;
   justify-content: space-around;
@@ -1453,15 +1434,13 @@ html {
   margin-bottom: 1.87rem;
   padding: 1.31rem;
 }
-
 .footer_bottom__text {
   color: rgb(52, 52, 52);
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 19.1 0.25rem;
+  line-height: 1.25rem;
 }
-
 .footer_bottom__link {
   text-decoration: none;
   color: rgb(52, 52, 52);
@@ -1469,6 +1448,49 @@ html {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25rem;
+}
+.footer_phone {
+  margin-right: 8.125rem;
+  margin-bottom: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer_phone__number {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+}
+@media (max-width: 1300px) {
+  .footer .footer_top {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-bottom: 1rem;
+  }
+  .footer .footer_top .footer_logo {
+    margin-bottom: 10px;
+  }
+  .footer .footer_top .footer_phone {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .footer .footer_navigate__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer .footer_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media (max-width: 620px) {
+  .footer .footer_logo_img {
+    width: 200px;
+  }
 }
 
 .oferta {

@@ -18,7 +18,7 @@
   }
   
   .reviews_wrapp {
-    width: 65.625rem;
+    max-width: 65.625rem;
     margin: 0rem auto;
     margin-bottom: 3.125rem;
   }
@@ -33,6 +33,7 @@
   .review_card {
     max-width: 21.875rem;
     min-height: 18.75rem;
+    margin-left: 2px;
     padding: 1.25rem;
     list-style: none;
     border-radius: $b-radius;
