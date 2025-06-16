@@ -23,12 +23,6 @@
     border-radius: $b-radius;
   }
 
-  // @mixin article_image_smoll{
-  //   max-height: 21.1875rem;
-  //   border-top-left-radius: $b-radius;
-  //   border-top-right-radius: 0rem;
-  //   border-bottom-left-radius: $b-radius;
-  // }
   @mixin article_image_def{
     width: 100%;
     object-fit: cover;
