@@ -631,14 +631,15 @@ html {
   background-color: rgb(253, 245, 223);
   border-radius: 1.56rem;
 }
-
+.all_help_card__img > img {
+  width: 100%;
+}
 .all_help_card__descript {
   max-width: 60%;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
-
 .all_help_card__title {
   color: rgb(52, 52, 52);
   font-family: "Montserrat-SemiBold", sans-serif;
@@ -646,7 +647,6 @@ html {
   font-weight: 600;
   line-height: 1.25rem;
 }
-
 .all_help_card__text {
   color: rgb(52, 52, 52);
   font-family: "Montserrat-Regular", sans-serif;
@@ -655,6 +655,17 @@ html {
   line-height: 1.87rem;
 }
 
+@media (max-width: 1000px) {
+  .all_help_title {
+    line-height: 2.5rem;
+  }
+  .all_help_card {
+    flex-direction: column;
+  }
+  .all_help_card__descript {
+    max-width: 100%;
+  }
+}
 .direct {
   margin-bottom: 6rem;
 }
@@ -904,6 +915,13 @@ html {
   margin: 0rem auto;
 }
 
+.all_reviews {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  align-items: flex-start;
+  margin-bottom: 1.87rem;
+}
 .all_reviews__title {
   margin-bottom: 2.5rem;
   padding-bottom: 1.25rem;
@@ -914,13 +932,40 @@ html {
   line-height: 1.87rem;
   border-bottom: 2px solid rgb(234, 182, 92);
 }
-
-.all_reviews {
+.all_reviews_cards_wrapp {
   display: flex;
-  justify-content: flex-start;
-  gap: 5rem;
-  align-items: flex-start;
-  margin-bottom: 1.87rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.87rem;
+}
+.all_reviews_card {
+  max-width: 1000px;
+  padding: 1.87rem 2.5rem;
+  background-color: rgb(241, 234, 214);
+  border-radius: 1.5625rem;
+}
+.all_reviews_card__date {
+  color: rgb(234, 182, 92);
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.87rem;
+}
+.all_reviews_card__title {
+  display: flex;
+  gap: 0.625rem;
+  color: rgb(52, 52, 52);
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.87rem;
+}
+.all_reviews_card__descript {
+  color: rgb(52, 52, 52);
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.87rem;
 }
 
 .review_form {
@@ -932,7 +977,6 @@ html {
   margin-bottom: 1rem;
   flex-grow: 1;
 }
-
 .review_form__label {
   display: block;
   color: rgb(52, 52, 52);
@@ -942,7 +986,6 @@ html {
   line-height: 1.125rem;
   margin-bottom: 0.25rem;
 }
-
 .review_form__input {
   display: block;
   width: 100%;
@@ -954,7 +997,6 @@ html {
   background: rgb(253, 245, 223);
   border-radius: 8px;
 }
-
 .review_form__textarea {
   overflow: auto;
   resize: vertical;
@@ -970,7 +1012,6 @@ html {
   border-radius: 0.5rem;
   padding: 0.5rem 0rem 0.5rem 0.625rem;
 }
-
 .review_form__input:focus {
   color: #212529;
   background-color: #fff;
@@ -978,7 +1019,6 @@ html {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
-
 .review_form__input::-moz-placeholder {
   color: rgb(52, 52, 52);
   font-family: "Montserrat-Regular", sans-serif;
@@ -987,7 +1027,6 @@ html {
   line-height: 1.125rem;
   opacity: 0.4;
 }
-
 .review_form__input::placeholder {
   color: rgb(52, 52, 52);
   font-family: "Montserrat-Regular", sans-serif;
@@ -996,7 +1035,6 @@ html {
   line-height: 1.125rem;
   opacity: 0.4;
 }
-
 .review_form__btn {
   cursor: pointer;
   border: 1px solid #cecece;
@@ -1006,61 +1044,27 @@ html {
   padding: 0.5rem 0.87rem;
   width: 7.5rem;
 }
-
 .review_form__btn:hover {
   box-shadow: inset 0px -20px 20px #ffffff;
 }
-
 .review_form__btn:active {
   margin-top: 1px;
   margin-bottom: -1px;
   zoom: 1;
 }
-
 .review_form__btn:focus {
   outline: none;
 }
 
-.all_reviews_cards_wrapp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.87rem;
+@media (max-width: 1000px) {
+  .all_reviews {
+    flex-direction: column;
+  }
+  .review_form {
+    max-width: none;
+    width: 100%;
+  }
 }
-
-.all_reviews_card {
-  max-width: 1000px;
-  padding: 1.87rem 2.5rem;
-  background-color: rgb(241, 234, 214);
-  border-radius: 1.5625rem;
-}
-
-.all_reviews_card__date {
-  color: rgb(234, 182, 92);
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.87rem;
-}
-
-.all_reviews_card__title {
-  display: flex;
-  gap: 0.625rem;
-  color: rgb(52, 52, 52);
-  font-family: "Montserrat-SemiBold", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.87rem;
-}
-
-.all_reviews_card__descript {
-  color: rgb(52, 52, 52);
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.87rem;
-}
-
 .credo {
   max-height: 41.7rem;
   margin-bottom: 6rem;
@@ -1268,7 +1272,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 .my_blog__title {
   width: 100%;
   align-self: flex-start;
@@ -1281,54 +1284,48 @@ html {
   line-height: 1.87rem;
   border-bottom: 2px solid rgb(234, 182, 92);
 }
-
-.article_card {
+.my_blog .article_card {
   max-width: 75rem;
   min-height: 13.75rem;
   display: flex;
+  align-items: center;
   gap: 3.125rem;
   margin-bottom: 30px;
   background-color: rgb(253, 245, 223);
   border-radius: 1.5625rem;
 }
-
-.article_card__pic {
-  max-width: 23.125em;
+.my_blog .article_card__pic {
+  max-width: 20.125em;
   display: block;
 }
-
-.article_card__img {
+.my_blog .article_card__img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1.5625rem;
 }
-
-.article_card__wrapp {
-  max-width: 375rem;
+.my_blog .article_card__wrapp {
+  max-width: 33.5rem;
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
 }
-
-.article_card__date {
+.my_blog .article_card__date {
   color: rgb(234, 182, 92);
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.87rem;
 }
-
-.article_card__title {
+.my_blog .article_card__title {
   color: rgb(52, 52, 52);
   font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.87rem;
 }
-
-.article_card__descript {
+.my_blog .article_card__descript {
   margin-bottom: 0.625rem;
   color: rgb(52, 52, 52);
   font-family: "Montserrat-Regular", sans-serif;
@@ -1336,41 +1333,67 @@ html {
   font-weight: 400;
   line-height: 1.87rem;
 }
-
-.article_card__descript_item {
+.my_blog .article_card__descript_item {
   text-indent: 1.76rem;
 }
+.my_blog .article_card__link {
+  color: rgb(234, 182, 92);
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+@media (max-width: 1000px) {
+  .my_blog .article_card {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
 
-.detail_card {
+.my_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my_article__title {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  color: #eab65c;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 2.87rem;
+  border-bottom: 2px solid #eab65c;
+}
+.my_article .detail_card {
   max-width: 90%;
   min-height: 13.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.87rem;
+  padding-top: 10px;
   background-color: rgb(253, 245, 223);
   border-radius: 1.5625rem;
 }
-
-.detail_card__wrapp {
+.my_article .detail_card__wrapp {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-direction: column;
 }
-
-.detail_card__pic {
+.my_article .detail_card__pic {
   display: block;
 }
-
-.detail_card__img {
+.my_article .detail_card__img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.detail_card__date {
+.my_article .detail_card__date {
   margin-bottom: 1.87rem;
   color: rgb(234, 182, 92);
   font-family: "Montserrat-Regular", sans-serif;
@@ -1378,8 +1401,7 @@ html {
   font-weight: 400;
   line-height: 1.87rem;
 }
-
-.detail_card__descript {
+.my_article .detail_card__descript {
   margin-bottom: 1.25rem;
   font-size: 1rem;
   margin-bottom: 0.625rem;
@@ -1387,6 +1409,11 @@ html {
   font-family: "Montserrat-Regular", sans-serif;
   font-weight: 400;
   line-height: 1.87rem;
+}
+@media (max-width: 620px) {
+  .my_article .my_article__title {
+    font-size: 2rem;
+  }
 }
 
 .footer_top {

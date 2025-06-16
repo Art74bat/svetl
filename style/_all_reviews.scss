@@ -1,7 +1,14 @@
 
 //страница все отзывы
+  
+.all_reviews {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  align-items: flex-start;
+  margin-bottom: 1.87rem;
 
-.all_reviews__title {
+  &__title {
     // margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     padding-bottom: 1.25rem;
@@ -12,26 +19,58 @@
     line-height: 1.87rem;
     border-bottom: 2px solid $orange-color;
   }
-  
-  .all_reviews {
+
+  &_cards_wrapp {
     display: flex;
-    justify-content: flex-start;
-    gap: 5rem;
-    align-items: flex-start;
-    margin-bottom: 1.87rem;
-  }
-  
-  .review_form {
-    max-width: 37.5rem;
-    min-width: 18.75rem;
-    display: flex;
-    gap: 1.25rem;
     flex-direction: column;
-    margin-bottom: 1rem;
-    flex-grow: 1;
+    justify-content: center;
+    gap: 1.87rem;
   }
+
+  &_card {
+    max-width: 1000px;
+    padding: 1.87rem 2.5rem;
+    background-color: rgb(241, 234, 214);
+    border-radius: $b-radius;
+
+    &__date {
+      color: $orange-color;
+      font-family: "Montserrat-Regular", sans-serif;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.87rem;
+    }
+    
+    &__title {
+      display: flex;
+      gap: 0.625rem;
+      color: $black-color;
+      font-family: "Montserrat-SemiBold", sans-serif;
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.87rem;
+    }
+    
+    &__descript {
+      color: $black-color;
+      font-family: "Montserrat-Regular", sans-serif;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.87rem;
+    }
+  }     
+}
   
-  .review_form__label {
+.review_form {
+  max-width: 37.5rem;
+  min-width: 18.75rem;
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+
+  &__label {
     display: block;
     color: $black-color;
     font-family: "Montserrat-Medium", sans-serif;
@@ -41,7 +80,7 @@
     margin-bottom: 0.25rem;
   }
   
-  .review_form__input {
+  &__input {
     display: block;
     width: 100%;
     height: calc(2.25rem + 2px);
@@ -53,7 +92,7 @@
     border-radius: 8px;
   }
   
-  .review_form__textarea {
+  &__textarea {
     overflow: auto;
     resize: vertical;
     width: 100%;
@@ -69,7 +108,7 @@
     padding: 0.5rem 0rem 0.5rem 0.625rem;
   }
   
-  .review_form__input:focus {
+  &__input:focus {
     color: #212529;
     background-color: #fff;
     border-color: #bdbdbd;
@@ -77,7 +116,7 @@
     box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
   }
   
-  .review_form__input::placeholder {
+  &__input::placeholder {
     color: $black-color;
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 1rem;
@@ -86,7 +125,7 @@
     opacity: 0.4;
   }
   
-  .review_form__btn {
+  &__btn {
     cursor: pointer;
     border: 1px solid #cecece;
     background: $orange-color;
@@ -96,57 +135,29 @@
     width: 7.5rem;
   }
   
-  .review_form__btn:hover {
+  &__btn:hover {
     box-shadow: inset 0px -20px 20px #ffffff;
   }
   
-  .review_form__btn:active {
+  &__btn:active {
     margin-top: 1px;
     margin-bottom: -1px;
     zoom: 1;
   }
   
-  .review_form__btn:focus {
+  &__btn:focus {
     outline: none;
   }
+}
   
-  .all_reviews_cards_wrapp {
-    display: flex;
+@media (max-width:1000px) {
+  .all_reviews{
     flex-direction: column;
-    justify-content: center;
-    gap: 1.87rem;
   }
-  
-  .all_reviews_card {
-    max-width: 1000px;
-    padding: 1.87rem 2.5rem;
-    background-color: rgb(241, 234, 214);
-    border-radius: $b-radius;
+  .review_form{
+    max-width: none;
+    width: 100%;
   }
-  
-  .all_reviews_card__date {
-    color: $orange-color;
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.87rem;
-  }
-  
-  .all_reviews_card__title {
-    display: flex;
-    gap: 0.625rem;
-    color: $black-color;
-    font-family: "Montserrat-SemiBold", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 1.87rem;
-  }
-  
-  .all_reviews_card__descript {
-    color: $black-color;
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.87rem;
-  }
+}
+
   
