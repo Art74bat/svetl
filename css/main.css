@@ -79,7 +79,7 @@ html {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
-  background-color: rgb(234, 182, 92);
+  background-color: #eab65c;
   border-radius: 1.56rem;
 }
 
@@ -119,11 +119,14 @@ html {
   font-weight: 700;
   font-display: swap;
 }
+.header .logo__img {
+  max-height: 114px;
+}
 .header_top {
   display: flex;
   justify-content: space-between;
   padding: 1.25rem 0rem;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
 }
 .header_top .social_wrapp {
   margin-left: 5.62rem;
@@ -155,7 +158,7 @@ html {
   text-decoration: none;
 }
 .header_top .header_phone_text {
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -201,7 +204,7 @@ html {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: rgb(234, 182, 92);
+  background-color: #eab65c;
   bottom: -3px;
   left: 0px;
   opacity: 0;
@@ -236,6 +239,9 @@ html {
   }
 }
 @media (max-width: 1000px) {
+  .header .logo__img {
+    width: 300px;
+  }
   .header .header_bottom {
     position: relative;
     justify-content: space-between;
@@ -257,7 +263,7 @@ html {
     width: 30px;
     height: 3px;
     margin: 6px auto;
-    background-color: rgb(234, 182, 92);
+    background-color: #eab65c;
     transition: 0.2s;
   }
   .header .popup {
@@ -343,7 +349,7 @@ html {
 .top__link {
   position: relative;
   text-decoration: none;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -357,7 +363,7 @@ html {
   display: block;
   left: 0px;
   bottom: 0px;
-  background-color: rgb(234, 182, 92);
+  background-color: #eab65c;
 }
 .top__pic {
   display: block;
@@ -445,7 +451,7 @@ html {
 }
 .about_right__link {
   text-decoration: none;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -477,7 +483,7 @@ html {
   gap: 1.87rem;
   margin-bottom: 3.75rem;
   padding: 1.25rem;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
   border-radius: 0.5rem;
 }
 .about_detail__pic {
@@ -516,12 +522,12 @@ html {
 .about_title {
   margin-bottom: 2.31rem;
   padding-bottom: 1.25rem;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.87rem;
-  border-bottom: 2px solid rgb(234, 182, 92);
+  border-bottom: 2px solid #eab65c;
 }
 
 .about_quote {
@@ -580,7 +586,7 @@ html {
 }
 .my_help .card__text {
   max-width: 21.4375rem;
-  color: rgb(253, 245, 223);
+  color: #fcf4de;
   font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -612,12 +618,12 @@ html {
 .all_help_title {
   margin-bottom: 2.5rem;
   padding-bottom: 1.25rem;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.87rem;
-  border-bottom: 2px solid rgb(234, 182, 92);
+  border-bottom: 2px solid #eab65c;
 }
 
 .all_help_card {
@@ -628,7 +634,7 @@ html {
   margin-bottom: 2.5rem;
   padding: 1.87rem;
   list-style: none;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
   border-radius: 1.56rem;
 }
 .all_help_card__img > img {
@@ -645,7 +651,7 @@ html {
   font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 1.625rem;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 2.25rem;
 }
 .all_help_card__text {
   color: rgb(52, 52, 52);
@@ -760,7 +766,7 @@ html {
   align-items: flex-start;
   justify-content: space-around;
   border-radius: 1.5625rem;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
 }
 .price_wrapp .price_card__description {
   margin-bottom: 1.25rem;
@@ -886,11 +892,11 @@ html {
   padding: 1.25rem;
   list-style: none;
   border-radius: 1.5625rem;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
 }
 .reviews_card__date {
   margin-bottom: 0.625rem;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -925,12 +931,12 @@ html {
 .all_reviews__title {
   margin-bottom: 2.5rem;
   padding-bottom: 1.25rem;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.87rem;
-  border-bottom: 2px solid rgb(234, 182, 92);
+  border-bottom: 2px solid #eab65c;
 }
 .all_reviews_cards_wrapp {
   display: flex;
@@ -945,7 +951,7 @@ html {
   border-radius: 1.5625rem;
 }
 .all_reviews_card__date {
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
@@ -994,7 +1000,7 @@ html {
   font-size: 0.81rem;
   padding: 0.1875rem 0rem 0.25rem 0.625rem;
   border: 1px solid #cecece;
-  background: rgb(253, 245, 223);
+  background: #fcf4de;
   border-radius: 8px;
 }
 .review_form__textarea {
@@ -1038,7 +1044,7 @@ html {
 .review_form__btn {
   cursor: pointer;
   border: 1px solid #cecece;
-  background: rgb(234, 182, 92);
+  background: #eab65c;
   box-shadow: inset 0px 20px 20px #ffffff;
   border-radius: 0.5rem;
   padding: 0.5rem 0.87rem;
@@ -1140,7 +1146,7 @@ html {
   justify-content: center;
   gap: 1.87rem;
   flex-grow: 1;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
   border-radius: 1.5625rem;
 }
 .blogs_wrapp .article__pic {
@@ -1177,7 +1183,7 @@ html {
   line-height: 1.25rem;
 }
 .blogs_wrapp .article__link {
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
@@ -1192,7 +1198,7 @@ html {
   border-bottom-left-radius: 1.5625rem;
 }
 .blogs_wrapp .article__date {
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
@@ -1215,7 +1221,7 @@ html {
     justify-content: flex-start;
     gap: 1.25rem;
     padding-bottom: 3.75rem;
-    background-color: rgb(253, 245, 223);
+    background-color: #fcf4de;
     border-radius: 1.5625rem;
   }
 }
@@ -1228,7 +1234,7 @@ html {
     justify-content: center;
     gap: 1.87rem;
     flex-grow: 1;
-    background-color: rgb(253, 245, 223);
+    background-color: #fcf4de;
     border-radius: 1.5625rem;
   }
   .blogs_wrapp .article__image {
@@ -1277,12 +1283,12 @@ html {
   align-self: flex-start;
   margin-bottom: 2.5rem;
   padding-bottom: 1.25rem;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.87rem;
-  border-bottom: 2px solid rgb(234, 182, 92);
+  border-bottom: 2px solid #eab65c;
 }
 .my_blog .article_card {
   max-width: 75rem;
@@ -1291,7 +1297,7 @@ html {
   align-items: center;
   gap: 3.125rem;
   margin-bottom: 30px;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
   border-radius: 1.5625rem;
 }
 .my_blog .article_card__pic {
@@ -1312,7 +1318,7 @@ html {
   gap: 0.625rem;
 }
 .my_blog .article_card__date {
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
@@ -1337,7 +1343,7 @@ html {
   text-indent: 1.76rem;
 }
 .my_blog .article_card__link {
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -1375,7 +1381,7 @@ html {
   align-items: center;
   margin-bottom: 1.87rem;
   padding-top: 10px;
-  background-color: rgb(253, 245, 223);
+  background-color: #fcf4de;
   border-radius: 1.5625rem;
 }
 .my_article .detail_card__wrapp {
@@ -1395,7 +1401,7 @@ html {
 }
 .my_article .detail_card__date {
   margin-bottom: 1.87rem;
-  color: rgb(234, 182, 92);
+  color: #eab65c;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
@@ -1420,8 +1426,15 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 3rem;
-  background-color: rgb(253, 245, 223);
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: #fcf4de;
+}
+.footer_top .footer_logo__img {
+  max-height: 114px;
+}
+.footer_top .footer_social {
+  margin-left: 172px;
 }
 .footer_navigate__list {
   display: flex;
@@ -1438,6 +1451,18 @@ html {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25rem;
+}
+.footer_phone {
+  margin-right: 8.125rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer_phone__number {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
 }
 .footer_bottom {
   display: flex;
@@ -1461,18 +1486,6 @@ html {
   font-weight: 400;
   line-height: 1.25rem;
 }
-.footer_phone {
-  margin-right: 8.125rem;
-  margin-bottom: 2.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-}
-.footer_phone__number {
-  text-decoration: none;
-  color: rgb(52, 52, 52);
-}
 @media (max-width: 1300px) {
   .footer .footer_top {
     flex-direction: column;
@@ -1489,6 +1502,12 @@ html {
   }
 }
 @media (max-width: 1000px) {
+  .footer .footer_logo__img {
+    width: 300px;
+  }
+  .footer .footer_social {
+    margin-left: 0;
+  }
   .footer .footer_navigate__list {
     flex-direction: column;
     gap: 20px;
